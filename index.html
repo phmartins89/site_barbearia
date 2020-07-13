@@ -1,20 +1,42 @@
 <!DOCTYPE html> <!-- Tipo do HMTL -->
 <html lang="pt-br"> <!-- Lingua da minha página -->
-	<head> <!-- Informações da minha página -->
+	<head> <!-- Aonde passo as Informações da minha página para o navegador -->
 		<meta charset="utf-8"> <!-- Fuso do meu Dicionario -->
 		<title>Barbearia Garage 315</title> <!-- Nome da Aba -->
-	
+		
+		<link rel="stylesheet" href="style.css">
+
 	</head>		
+
 		<body> <!-- O corpo do meu site -->
-			<h1 style="text-align: center"><!-- Centralizar texto -->Sobre a Barbearia Garage 315</h1>
+			<header>
+				<h1 class="titulo_principal">Barbearia Garage 315</h1>
+			</header>
+			<img id="banner" src="banner.jpg">
+			<div class=" principal">
+				<h2 class="titulo_centralizado"> <!-- Centralizar texto --> Sobre a Barbearia Garage 315</h2>
 
-			<p style="text-align: center">Localizada no bairro Califónia a <strong>Barbearia Garage 315</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a <strong>Barbearia Garage 315</strong> já é destaque na região e conquista novos clientes a cada dia. </p>	
-			
-			<p style="font-size: 20px; text-align: center"><!-- Ao colocar mais de um style coloque tudo dentro de  ( ; ) --><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes".</strong></em></p>
+				<p>Localizada no bairro Califónia a <strong>Barbearia Garage 315</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a <strong>Barbearia Garage 315</strong> já é destaque na região e conquista novos clientes a cada dia. </p>	
+				
+				<p id= "missao"><!-- Ao colocar mais de um style coloque tudo dentro de  ( ; ) --><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes".</strong></em></p>
 
-			<p style="text-align: center">Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+				<p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+				
+			</div>
 
-		</body><
+			<div class=" beneficios">
+			<h3 class="titulo_centralizado"> Benefícios</h3>
+				
+				<ul>
+					<li class="itens">Atendimento ao Cliente</li>
+					<li class="itens">Espaço diferenciado</li>
+					<li class="itens">Localização</li>
+					<li class="itens">Profissional Qualificado</li>
+				</ul>
+
+				<img src="beneficios.jpg" class="imagem_beneficios">
+			</div>
+	</body>
 </html>
 
 
