@@ -9,10 +9,12 @@ body {
 
 .principal {
 
-	background: #CCCCCC;
+	background: #87CEEB;
 	padding: 30px
 }
+
 .titulo_principal{
+
 	padding-left: 20px;
 }
 
@@ -35,8 +37,10 @@ em strong {
 
 
 .itens {
+
 	font-style: italic
 }
+
 .beneficios {
 	background: #ffffff;
 	padding: 20px	
