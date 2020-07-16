@@ -1,10 +1,11 @@
 header{
-	background: #70BDD1;
+	background: url(3900.jpg);
 	padding: 20px;
 }
 
 .fotologo{
-	width: 26%;
+	width: 100%;
+
 }
 
 .caixa{

@@ -9,7 +9,7 @@ body {
 
 .principal {
 
-	background: #87CEEB;
+	background: #363636;
 	padding: 30px
 }
 
@@ -18,12 +18,17 @@ body {
 	padding-left: 20px;
 }
 
+h2{
+	color: #ffffff;
+}
+	
 .titulo_centralizado {
 	text-align: center
 }
 
 p{
 	text-align: center;
+	color: #ffffff;
 }
 
 #missao {
