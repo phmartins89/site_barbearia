@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Contato - Garage 315</title> <!-- Nome da aba -->
+		<link rel="icon" href="mustache.ico"><!-- Referenciamento de icone para abas -->
+
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<div class="caixa">
+				<h1><img src="logooo.png" class="fotologo" alt="Logo da Barbearia Garage 315"></h1>
+				
+				<nav> <!-- Menu de navegação -->
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav> 
+			</div>
+		</header>
+
+		<main>
+			<form>
+				<label for="nomesobrenome">Nome e Sobrenome</label>
+				<input type="text" id="nomesobrenome" class="input-padrao" required placeholder=" Digite seu nome">
+
+				<label for="email">E-mail</label> <!-- Criação caixa de texto -->
+				<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com.br">
+
+				<label for="telefone">Telefone</label><!-- Criação caixa de texto -->
+				<input type="tel" id="telefone"class="input-padrao" required placeholder="(xx)xxxxx-xxxx">
+
+				<label for="mensagem">Mensagem</label><!-- Criação caixa de texto -->
+				<textarea cols="70" rows ="10" id="mensagem"class="input-padrao" required></textarea>
+
+				<fieldset>
+					<legend>Como prefere o nosso contato?</legend>
+
+					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">E-mail</label>
+					<!-- Criação de bolinhas de seleção na tela -->
+
+					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+					<!-- Criação de bolinhas de seleção na tela -->
+
+					<label for="radio-wpp"><input type="radio" name="contato" value="wpp" id="radio-wpp" checked>WhatsApp</label>
+					<!-- Criação de bolinhas de seleção na tela. (name="contato") server para marcar apenas uma das bolinhas --> 
+
+
+					
+				</fieldset>
+
+
+				
+				<fieldset>
+					<legend>Qual horário prefere ser atendido?</legend>
+					<select> <!-- Criação da caixa de seleção -->
+						<option>Manhã</option>
+						<option>Tarde </option>
+						<option>Noite</option>
+					</select>
+				</fieldset>
+
+
+				<label class="checkbox"><input type="checkbox" checked=""> Gostaria de receber nossas novidades por e-mail?</label> <!-- Neste caso nao foi feito um FOR o input ficou dentro do label -->
+				<input type="submit" value="Enviar formulário" class="enviar"><!-- Botão de subimeter informações do formulário -->
+			</form>
+
+
+			<table>
+				<thead>
+					<tr> <!-- TR cria a coluna -->
+						<th>Dia</th> <!-- TD cria a linha -->
+						<th>Horário</th><!--TR indica cabeçalho -->
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>Segunda</td>
+						<td>8h ~ 20h</td>
+					</tr>
+					<tr>
+						<td>Quarta</td>
+						<td>8h ~ 20h</td>
+					</tr>
+					<tr>
+						<td>Sexta</td>
+						<td>8h ~ 20h</td>
+					</tr>
+				</tbody>	
+			
+			</table>
+		</main>
+
+
+		<footer>
+			<img src="shave.png" class="img-rodape" alt="Logo da Barbearia Garage 315">
+			<p class="copyright"> &copy; Copyright Barbearia Garage 315 - 2020</p>
+
+		</footer>
+	</body>
+</html>
+<!--  -->

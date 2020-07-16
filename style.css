@@ -1,64 +1,179 @@
-body {
-	
+header{
+	background: url(3900.jpg);/* importando uma img  */
+	padding: 20px;
 }
 
-#banner {
-
+.fotologo{ /* Uma classe */
 	width: 100%;
+
 }
 
-.principal {
-
-	background: #363636;
-	padding: 30px
+.caixa{
+	position: relative; /* posicionamento */
+	width: 1000px; /* tamanho */
+	margin: 0 auto; /* margem centralizada */
 }
 
-.titulo_principal{
 
-	padding-left: 20px;
+nav{
+	position: absolute;
+	top: 110px;
+	right: 0; /* sem espaço a direita dos itens */
+
 }
 
-h2{
-	color: #ffffff;
+nav li{
+
+	display: inline;
+	margin: 0 0 0 15px;
+
 }
+
+nav a {
+	text-transform: uppercase; /* maiúsculo */
+	color: #265D6B;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover { /* ação ao passar o cursor */
+	color: #9A8333;
+	text-decoration: underline;
+	font-size: 25px;
+
+}
+
+.produtos{
+
+	width: 1000px;
+	margin: 0 auto;
+	padding: 50px 0;
+
+}
+
+.produtos li:hover{
+	border-color: #9A8333; /* cor da borda */
 	
-.titulo_centralizado {
-	text-align: center
 }
 
-p{
-	text-align: center;
-	color: #ffffff;
-}
-
-#missao {
-
-	font-size: 20px
-}
-
-em strong {
-	color: #ff0000;
+.produtos li:active{
+	border-color: #088c19;	
 }
 
 
-.itens {
-
-	font-style: italic
+.produtos li:hover h2{
+	font-size: 40px;
 }
 
-.beneficios {
-	background: #ffffff;
-	padding: 20px	
-}
-
-
-ul{
+.produtos li{
 	display: inline-block;
+	text-align: center;
+	width: 30%;
 	vertical-align: top;
-	width: 20%;
-	margin-right: 15%;
+	background: #ffffff;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: #000000 2px solid;
+	border-radius: 20px 0px 20px 0px;
+	border-color: #15183C; 
 }
 
-.imagem_beneficios{
-	width: 50%;
+.produtos h2{
+	font-size: 30px;
+	font-weight:  bold;
 }
+
+.produto-desc{
+	font-size: 18px;
+	color: #15183C
+}
+
+.preco-produto{
+	font-size: 22px;
+	font-weight: bold;
+	color: #1E2356;
+	margin: 10px 0 0;
+}
+
+footer {
+
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 40px 0;
+}
+
+
+.img-rodape{
+
+	width: 10%;
+}
+
+.copyright{
+	color: #ffffff;
+	font-size: 13px;
+	margin: 20px 0;
+}
+main{
+
+	width: 940px;
+	margin: 0 auto;
+}
+ form{
+ 	margin: 40px 0;
+ }
+
+ form label, form legend {
+ 	display: block;
+ 	font-size: 20px;
+ 	margin: 0 0 10px;
+ }
+ .input-padrao {
+ 	display: block;
+ 	margin: 0 0 20px;
+ 	padding: 10px 25px;
+ 	width: 50%;
+ }
+ 
+ .checkbox{
+ 	margin: 20px;
+ }
+
+.enviar{
+	width: 40%; /* tamanho do bota em relação ao seu espaço */
+	padding: 15px 0;/* espaçamento interno */
+	background: orange; /* cor de fundo do botão */
+	color: white;
+	font-weight: bold; /* fonte em negrito */
+	font-size: 18px; /* tamanho da fonte */
+	border: none; /* sem contorno de borda */
+	border-radius: 5px; /*arredodando as bordas */
+	transition: 1s all; /* tempo de demora da mudança */
+	cursor: pointer; /* o cursor vira mãozinha */
+}
+
+.enviar:hover { /* ação de quando passar o cursor em cima */
+	background: red;
+	transform: scale(1.2); /* aumenta o botão em 20% */
+
+}
+
+table{
+	margin: 20px 0 40px; /* margem da tabela */
+}
+
+thead{
+	background: #555555;
+	color:white; /* cor da letra */
+	font-weight: bold; /* colocando em negrito */
+}
+
+td,th {
+
+	border: 1px solid #000000; /* borda  */
+	padding:  8px 15px; /* espaçamento interno */
+	
+}
+
+/* */
