@@ -189,6 +189,8 @@ td,th {
 	font-size: 2em; /* a fonte está 2X maior q seu padrão */
 	margin: 0 0 1em; /* Dá um espaço do mesmo tamanho da fonte abaixo */
 	clear: left;
+	/*text-shadow: 2px 2px #000000; Sombreamento em textos */
+	/*color: rgba(0,0,0,0.3);  Colore os titulos*/
 }
 
 .principal{
@@ -219,8 +221,8 @@ td,th {
 
 .mapa{
 	padding: 3em 0;
-	background: linear-gradient(#fefefe, #888888)
-
+	background: linear-gradient(#fefefe, #888888) /*linear gradiente é o efeito degrade
+*/
 }
 .mapa-conteudo{
 	width: 940px;
@@ -245,7 +247,15 @@ td,th {
 
 .imagem-beneficios {
 	width: 60%;
+	opacity: 1;
+	transition: 400ms;
+	box-shadow: 10px 10px 10px 0 #000000;
 }
+
+.imagem-beneficios:hover{
+	opacity: 0.3;	
+}
+
 .lista-beneficios{
 	width: 40%;
 	display: inline-block;
@@ -261,6 +271,10 @@ td,th {
 
 }
 
+.itens:before {
+	content: "★ ";
+}
+
 .video{
 	width: 560px;
 	margin: 2em auto;
@@ -268,5 +282,38 @@ td,th {
 	border-radius: 10px; /*arredodando as bordas */
 }
 
+@media screen and (max-width:  480px){
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+		width: auto;
+	}
 
-/* */
+	h1{
+		text-align: center;
+	}
+
+	nav{
+		position: static;
+	}
+	.lista-beneficios, .imagem-beneficios{
+		width: 100%;
+	}
+}
+
+/* Selecionando apenas frases selecionadas
+
+main > p {
+	background: red;
+}
+
+img + p {
+	background: blue;
+}
+
+img ~ p {
+	background: yellow;
+} 
+
+.principal p: not(#missao){
+	background: orange;
+}
+*/
